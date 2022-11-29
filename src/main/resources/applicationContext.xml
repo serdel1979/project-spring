@@ -6,11 +6,16 @@
 
     <!-- services -->
 
-<!--     <bean id="petStore" class="org.springframework.samples.jpetstore.services.PetStoreServiceImpl"> -->
-<!--         <property name="accountDao" ref="accountDao"/> -->
-<!--         <property name="itemDao" ref="itemDao"/> -->
-<!--         additional collaborators and configuration for this bean go here -->
-<!--     </bean> -->
+ 	<!-- creando bean de disquera dao -->
+ 	
+    <bean id="disqueraDaoBean" class="com.sergiodl.spring_desktop.dao.impl.DisqueraDaoImpl">
+       
+    </bean>
+    
+    <!-- creates a java.util.Properties instance with values loaded from the supplied location -->
+	<bean id="properties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+  		<property name="location" value="classpath:config.properties"/>
+	</bean>
 
     <!-- more bean definitions for services go here -->
 
