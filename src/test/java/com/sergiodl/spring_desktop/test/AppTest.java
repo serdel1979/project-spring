@@ -1,4 +1,4 @@
-package com.sergiodl.spring_desktop;
+package com.sergiodl.spring_desktop.test;
 
 import static org.junit.Assert.assertTrue;
 
